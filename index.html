@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Number Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prime Number Finder</h1>
+    <div class="input-container">
+      <label for="start">Start:</label>
+      <input type="number" id="start" placeholder="Start">
+      <label for="end">End:</label>
+      <input type="number" id="end" placeholder="End">
+      <button id="main-button" onclick="findPrimes()">Find Primes</button>
+    </div>
+    <div class="result-container">
+      <h2>Results:</h2>
+      <div id="results"></div>
+      <button onclick="showDetails()">Details</button>
+    </div>
+    <div class="details-container" id="details-container" style="display: none;">
+      <h2>Details:</h2>
+      <div id="time-table"></div>
+      <div id="space-table"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
